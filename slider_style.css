@@ -1,0 +1,135 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Audiowide', cursive;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.slider__container {
+    overflow: hidden;
+    background: #3cbabe;
+    /* background: #5a0e0e; */
+    width: 500px;
+}
+
+.slider__track {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background: #5a0e0e; */
+    background: #3cbabe;;
+}
+
+.slider__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f1d1d;
+    background: #a647b9;
+/* визуальное украшение при получившейся анимации */
+    clip-path: inset(0 2% 0 2%);
+    font-size: 40px;
+    min-width: 100%;
+    /* min-width: 500px; */
+    height: 100px;
+}
+
+.slider__buttons:disabled,
+.slider__buttons {
+    /* text-decoration: none; */
+    z-index: 2;
+    /* opacity: 1; */
+    outline: none;
+    margin: 20px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    /* height: auto; */
+}
+
+.slider__buttons:visited {
+   outline: none;
+}
+
+.slider__buttons:hover {
+    box-shadow: 0 0 4px 2px #007a74;
+}
+
+.slider__buttons:active {
+    box-shadow: 0 0 8px 4px #d8360d;
+}
+
+.dots__container {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.dot:hover {
+    border: 3px solid #007a74;
+}
+
+.dot:active {
+    border: 3px solid #860707;
+}
+
+.black__dot {
+    background: #232323;
+}
+
+/*анимации на добавочных классах 
+
+.animation__left {
+    animation: from_left linear 2s 1;
+}
+
+@keyframes from_left {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.animation__right {
+    animation: from_right linear 2s 1;
+}
+
+@keyframes from_right {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+} */
